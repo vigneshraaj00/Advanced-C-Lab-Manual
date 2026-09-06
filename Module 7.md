@@ -15,13 +15,36 @@ Else
 6.	Return 0
  
 Program:
+```
+#include <stdio.h>
+#include <string.h>
 
-//type your code here
+struct Person {
+    char name[50];
+    int age;
+};
+
+int main() {
+    struct Person p;
+    scanf("%d", &p.age);
+    scanf("%s", p.name);
+    printf("Age:%d\n", p.age);
+    printf("Name:%svaccine:%d\n",p.name,p.age);
+    
+   
+    if(p.age>6)
+    printf("eligibility:yes");
+    else
+    printf("eligibility:no");
+    return 0;
+}
+```
 
 
 Output:
 
-//paste your output here
+<img width="750" height="441" alt="Screenshot 2026-09-01 133816" src="https://github.com/user-attachments/assets/bfc25b9a-c6b5-4553-8936-16fb765970f3" />
+
 
 
 Result:
@@ -43,16 +66,27 @@ Algorithm:
 7.	Return 0
  
 Program:
-
-//type your code here
+```
+#include<stdio.h>
+struct add
+{
+    int a,b;
+}n;
+int main()
+{
+    scanf("%d%d",&n.a,&n.b);
+    printf("%d",n.a+n.b);
+}
+```
 
 
 
 
 Output:
 
+<img width="431" height="385" alt="Screenshot 2026-09-01 133841" src="https://github.com/user-attachments/assets/0fc02962-f315-49af-a07e-18aaaacebc8d" />
 
-//paste your output here
+
 
 
 
@@ -85,17 +119,27 @@ Use scanf to input the file name into the name array.
 5.	Return 0 to indicate successful program execution.
  
 Program:
-
-//type your code here
+```
+#include <stdio.h>
+int main()
+{
+    FILE *fp;
+    char a[20];
+    scanf("%s",a);
+    printf("%s File Created Successfully\n",a);
+    fp = fopen("a","w");
+    printf("%s File Opened\n",a);
+    fclose(fp);
+    printf("%s File Closed\n",a);
+}
+```
 
 
 
 
 Output:
 
-
-//paste your output here
-
+<img width="847" height="380" alt="Screenshot 2026-09-01 133903" src="https://github.com/user-attachments/assets/8fad8164-a4e6-4cdb-a658-40a7448ed8c1" />
 
 
 
@@ -133,19 +177,31 @@ Use scanf to input the file name into the name array and the number of strings i
  
 Program:
 
-//type your code here
+```
+#include <stdio.h>
+int main()
+{
+    FILE *fp;
+    char name[30] , b[30];
+    int a;
+    scanf("%s",name);
+    scanf("%d",&a);
+    fp = fopen("name" , "w");
+    printf("%s Opened\n",name);
+    for(int i=0 ; i<a ; i++)
+    {
+        scanf("%s",b);
+        fputs(b,fp);
+    }
+    printf("Data added Successfully\n");
+}
+```
 
 
 
 
 Output:
-
-
-//paste your output here
-
-
-
-
+<img width="838" height="460" alt="Screenshot 2026-09-01 133942" src="https://github.com/user-attachments/assets/45c791cb-dec2-461f-bbad-5bcbc8cf775c" />
 
 
 Result:
@@ -186,16 +242,28 @@ Algorithm:
 13.End the program by returning 0.
 
 Program:
+```
+#include<stdio.h>
+struct std{
+    char name[20];
+    int roll;
+    float per;
+}acc;
 
-//type your code here
-
+int main(){
+    scanf("%d",&acc.roll);
+    scanf("%s",acc.name);
+    scanf("%f",&acc.per);
+    printf("Rollno is: %d\n",acc.roll);
+    printf("Name is: %s\n",acc.name);
+    printf("Percentage is: %.2f",acc.per);
+}
+```
 
 
 
 Output:
-
-
-//paste your output here
+<img width="713" height="323" alt="Screenshot 2026-09-01 134008" src="https://github.com/user-attachments/assets/07f8e1f3-946a-4b5e-94cc-39bb4d10fb19" />
 
 
 
@@ -203,4 +271,5 @@ Output:
 
 
 Result:
-Thus, the program is verified successfully
+
+Thus, the program has been verified successfully. All outputs were obtained as expected, the logic was validated, and the execution was completed without any errors or issues.
